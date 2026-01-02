@@ -1,40 +1,40 @@
 // Techmatics Images
-import Amalia from "../../assets/Orator Banners/Amalia .png"
-import Inbal from "../../assets/Orator Banners/Inbal.png"
-import Karen from "../../assets/Orator Banners/Karen.png"
-import Lewis from "../../assets/Orator Banners/Lewis.png"
+import Jen from "../../assets/Orator Banners/Jen.png"
+import Nonye from "../../assets/Orator Banners/Nonye.png"
+import Hezi from "../../assets/Orator Banners/Hezi.png"
+import Oluebube from "../../assets/Orator Banners/Oluebube.png"
 
   export const orators = [
     {
       id: "andreas-m-papas",
-      image: Amalia,
-      name: "Amalia Papanikolaou",
-      from: "University Kingdom",
-      about: "University college London (UCL)",
+      image: Jen,
+      name: "Jen Mohaupt",
+      from: "Canada",
+      about: "McMaster University",
       // link: "/techmatics-orators/siti-rahman"
     },
     {
       id: "maria-richards-brown",
-      image:  Inbal,
-      name: "Inbal Shapira Lots",
-      from: "Israel",
-      about: "Bar-llan University",
+      image:  Nonye,
+      name: "Nonye Tochi Aghanya",
+      from: "United states",
+      about: "Peace University",
       // link: "/techmatics-orators/abdullah-aydin",
     },
     {
       id: "rassa-pegahi",
-      image: Karen,
-      name: " Karen sayal",
-      from: "United Kingdom",
-      about: "Cambridge university",
+      image: Hezi,
+      name: "Hezi Zhang",
+      from: "Chaina",
+      about: "Anhui Medical University",
       // link: "/techmatics-orators/janani-varun",
     },
     {
       id: "anna-w-sobanska",
-      image: Lewis,
-      name: "Lewis Vidler",
-      from: "United Kingdom",
-      about: "Oxford university",
+      image: Oluebube,
+      name: "Oluebube Nwajaku",
+      from: "United states",
+      about: "King’s College London",
       // link: "/techmatics-orators/abdeen-omer",
     },
     // Second row
