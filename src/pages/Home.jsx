@@ -38,7 +38,7 @@ Nursing  Leadership & Workforce Excellence Congress          </h1>
           </p>
 
           <div className="float-end mt-4">
-            {/* <FlipClock /> */}
+            <FlipClock />
           </div>
         </div>
 
