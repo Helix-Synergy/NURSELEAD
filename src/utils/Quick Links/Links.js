@@ -1,5 +1,17 @@
 import { Facebook, Twitter, Instagram, Youtube, Linkedin } from "lucide-react";
-import {FaReddit} from "react-icons/fa"
+import { FaReddit } from "react-icons/fa"
+
+const XIcon = ({ size = 18 }) => (
+  <svg
+    viewBox="0 0 24 24"
+    width={size}
+    height={size}
+    fill="currentColor"
+    className="lucide lucide-x"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 
 //Social Links
@@ -15,7 +27,7 @@ export const socialLinks = [
     id: "twitter",
     name: "Twitter (X)",
     url: "https://x.com/Helixconfe69272",
-    icon: <Twitter size={18} />,
+    icon: <XIcon size={18} />,
   },
   {
     id: "instagram",

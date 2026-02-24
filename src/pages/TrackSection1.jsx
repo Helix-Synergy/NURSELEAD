@@ -144,9 +144,8 @@ const TrackCard = ({ title, subtitle, description, image, reverse }) => {
   return (
     <div
       ref={cardRef}
-      className={`flex flex-col md:flex-row ${
-        reverse ? 'md:flex-row-reverse' : ''
-      } items-center gap-8 mb-12 cursor-pointer`}
+      className={`flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''
+        } items-center gap-8 mb-12 cursor-pointer`}
       onClick={handleCardClick}
     >
       {/* Image Container */}
@@ -177,7 +176,7 @@ const TrackCard = ({ title, subtitle, description, image, reverse }) => {
         <h3 className="text-lg font-semibold text-gray-600 mb-2">
           {subtitle}
         </h3>
-        <p className="text-gray-700 text-lg leading-relaxed">
+        <p className="text-gray-700 text-lg leading-relaxed text-justify">
           {description}
         </p>
       </motion.div>
@@ -188,7 +187,7 @@ const TrackCard = ({ title, subtitle, description, image, reverse }) => {
 const TracksSection = () => {
   return (
     <section className="container max-w-7xl mx-auto">
-       <div className={`${banner_style} mx-auto tracks-banner`}>
+      <div className={`${banner_style} mx-auto tracks-banner`}>
         <h1 className="text-slate-900 text-3xl sm:text-5xl font-bold">
           Conference Tracks
         </h1>

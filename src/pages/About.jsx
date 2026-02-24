@@ -25,25 +25,25 @@ const data = {
     organizer: "Helix Conferences",
     description: [
       <>
-  
-The <Link to= "/nurselead-orators"  className="
+
+        The <Link to="/nurselead-orators" className="
              hover:text-accent hover:decoration-accent
              transition-colors duration-300">
- World Nursing Leadership & Workforce Excellence Congress,  </Link>
- organized by Helix Conferences, is a distinguished international forum dedicated to advancing leadership capability, workforce resilience, and professional excellence across nursing and healthcare systems.
-The congress is designed to facilitate high-level knowledge exchange, cross-sector collaboration, and evidence-based dialogue that strengthens nursing leadership pipelines and workforce capacity. Key focus areas include leadership development, workforce retention, education and training, staffing models, mental well-being, diversity and inclusion, policy, and healthcare transformation.
-Through keynote addresses, plenary sessions, expert-led panels, leadership workshops, and practice-driven case studies, participants gain strategic insights into emerging leadership models, workforce innovation, organizational culture, and sustainable healthcare delivery.
-<Link to="/about-nurselead"  className="
+          World Nursing Leadership & Workforce Excellence Congress,  </Link>
+        organized by Helix Conferences, is a distinguished international forum dedicated to advancing leadership capability, workforce resilience, and professional excellence across nursing and healthcare systems.
+        The congress is designed to facilitate high-level knowledge exchange, cross-sector collaboration, and evidence-based dialogue that strengthens nursing leadership pipelines and workforce capacity. Key focus areas include leadership development, workforce retention, education and training, staffing models, mental well-being, diversity and inclusion, policy, and healthcare transformation.
+        Through keynote addresses, plenary sessions, expert-led panels, leadership workshops, and practice-driven case studies, participants gain strategic insights into emerging leadership models, workforce innovation, organizational culture, and sustainable healthcare delivery.
+        <Link to="/about-nurselead" className="
              hover:text-accent hover:decoration-accent
              transition-colors duration-300">
- </Link>
- 
-      
+        </Link>
+
+
       </>,
       <>
         {/* From cutting-edge AI to advanced robotics, from cybersecurity trends to sustainable engineering—we curate thought-provoking content and create immersive spaces where innovation thrives. Explore our sessions to engage with the future of technology, exchange ideas with global experts, and drive impactful solutions across industries.{" "} */}
         <Link
-          to= "/nurselead-conference-tracks/" 
+          to="/nurselead-conference-tracks/"
           target="blank"
           rel="noopener noreferrer"
           className="text-accent font-bold"
@@ -58,53 +58,53 @@ Through keynote addresses, plenary sessions, expert-led panels, leadership works
       // linkText: "Microbiome Science",
       // link: "/",
       suffix:
-       "Join global nursing leaders, administrators, educators, and policymakers in shaping a resilient, empowered, and future-ready nursing workforce..",
+        "Join global nursing leaders, administrators, educators, and policymakers in shaping a resilient, empowered, and future-ready nursing workforce..",
     },
   ],
-highlights: [
-  {
-    title: "Distinguished Keynote Speakers",
-    description:
-      "Engage with internationally recognized nursing leaders and healthcare executives driving workforce and leadership excellence.",
-  },
-  {
-    title: "Leadership Workshops & Expert Sessions",
-    description:
-      "Participate in in-depth sessions on strategic leadership, workforce resilience, talent development, and change management.",
-  },
-  {
-    title: "Innovation & Workforce Solutions Exhibition",
-    description:
-      "Explore leadership tools, workforce technologies, education platforms, and professional development solutions.",
-  },
-  {
-    title: "Strategic Networking Opportunities",
-    description:
-      "Connect with global stakeholders across nursing leadership, healthcare organizations, academia, and policy.",
-  },
-  {
-    title: "Workforce Well-being & Retention Focus",
-    description:
-      "Gain insights into burnout prevention, mental health support, flexible staffing, and inclusive workplace cultures.",
-  },
-  {
-    title: "Leadership & Workforce Intelligence",
-    description:
-      "Discover best practices, global benchmarks, policy updates, and data-driven workforce strategies.",
-    linkText: "View event schedule",
-    link: "/nurselead-event-schedule",
-  },
-  {
-    title: "Collaboration & Leadership Platforms",
-    description:
-      "Build partnerships to strengthen leadership capacity, workforce planning, and healthcare system performance.",
-  },
-  {
-    title: "Professional Development & Accreditation",
-    description:
-      "Earn professional development recognition through certified leadership programs and advanced executive workshops.",
-  },
-],
+  highlights: [
+    {
+      title: "Distinguished Keynote Speakers",
+      description:
+        "Engage with internationally recognized nursing leaders and healthcare executives driving workforce and leadership excellence.",
+    },
+    {
+      title: "Leadership Workshops & Expert Sessions",
+      description:
+        "Participate in in-depth sessions on strategic leadership, workforce resilience, talent development, and change management.",
+    },
+    {
+      title: "Innovation & Workforce Solutions Exhibition",
+      description:
+        "Explore leadership tools, workforce technologies, education platforms, and professional development solutions.",
+    },
+    {
+      title: "Strategic Networking Opportunities",
+      description:
+        "Connect with global stakeholders across nursing leadership, healthcare organizations, academia, and policy.",
+    },
+    {
+      title: "Workforce Well-being & Retention Focus",
+      description:
+        "Gain insights into burnout prevention, mental health support, flexible staffing, and inclusive workplace cultures.",
+    },
+    {
+      title: "Leadership & Workforce Intelligence",
+      description:
+        "Discover best practices, global benchmarks, policy updates, and data-driven workforce strategies.",
+      linkText: "View event schedule",
+      link: "/nurselead-event-schedule",
+    },
+    {
+      title: "Collaboration & Leadership Platforms",
+      description:
+        "Build partnerships to strengthen leadership capacity, workforce planning, and healthcare system performance.",
+    },
+    {
+      title: "Professional Development & Accreditation",
+      description:
+        "Earn professional development recognition through certified leadership programs and advanced executive workshops.",
+    },
+  ],
 
 
 
@@ -138,7 +138,7 @@ const AboutPublicHealth = () => {
       </div>
 
       <h1 className="text-4xl mt-2 font-bold text-one">
-Leading Nurses Building Stronger Healthcare Systems
+        Leading Nurses Building Stronger Healthcare Systems
       </h1>
       <p className="text-center text-gray-600 text-3xl mb-6">
         <strong>
@@ -149,7 +149,7 @@ Leading Nurses Building Stronger Healthcare Systems
       {data.event.description.map((desc, idx) => (
         <p
           key={idx}
-          className="mb-6 text-lg leading-relaxed text-center w-full min-w-5xl px:2 md:px-12 lg:px-24"
+          className="mb-6 text-lg leading-relaxed text-justify w-full min-w-5xl px:2 md:px-12 lg:px-24"
         >
           {desc}
         </p>
@@ -163,7 +163,7 @@ Leading Nurses Building Stronger Healthcare Systems
         {data.join.map((para, idx) => (
           <p
             key={idx}
-            className="mb-6 text-lg leading-relaxed text-center w-full min-w-5xl px:2 md:px-12 lg:px-24"
+            className="mb-6 text-lg leading-relaxed text-justify w-full min-w-5xl px:2 md:px-12 lg:px-24"
           >
             {para.text} <Link to={para.link}>{para.linkText}</Link>
             {para.suffix}
@@ -178,25 +178,25 @@ Leading Nurses Building Stronger Healthcare Systems
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <User className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
-  Nursing Leaders, Managers, and Executives
+              Nursing Leaders, Managers, and Executives
             </h3>
           </div>
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <BookOpen className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
- Nurse Educators and Academic Leaders
+              Nurse Educators and Academic Leaders
             </h3>
           </div>
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <Rocket className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
-Healthcare Administrators and HR Professionals
+              Healthcare Administrators and HR Professionals
             </h3>
           </div>
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <PackageSearch className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
-Workforce Planning and Policy Experts
+              Workforce Planning and Policy Experts
             </h3>
           </div>
         </div>
@@ -216,7 +216,7 @@ Workforce Planning and Policy Experts
                 <h3 className="font-semibold whitespace-nowrap mr-1">
                   {highlight.title} –
                 </h3>
-                <p className="text-md text-gray-600 flex-1">
+                <p className="text-md text-gray-600 flex-1 text-justify">
                   {highlight.link ? (
                     <>
                       {highlight.description}{" "}

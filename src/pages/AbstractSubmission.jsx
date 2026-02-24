@@ -97,28 +97,28 @@ const AbstractSubmission = () => {
     setLoading(false);
   };
 
-const presentationOptions = [
-  "Leadership Strategy",
-  "Nurse Empowerment",
-  "AI in Nursing",
-  "Workforce Optimization",
-  "Nursing Research",
-  "Skill Advancement",
-  "Clinical Education",
-  "Decision Making",
-  "Workforce Forecasting",
-  "Nurse Autonomy",
-  "Nurse Well-Being",
-  "Remote Nursing",
-  "Professional Development",
-  "Behavioral Health",
-  "Communication Skills",
-  "Staffing Innovation",
-  "Future of Nursing Leadership",
-  "Mental Health Nursing",
-  "Women in Nursing Leadership",
-  "Mentorship in Nursing",
-];
+  const presentationOptions = [
+    "Leadership Strategy",
+    "Nurse Empowerment",
+    "AI in Nursing",
+    "Workforce Optimization",
+    "Nursing Research",
+    "Skill Advancement",
+    "Clinical Education",
+    "Decision Making",
+    "Workforce Forecasting",
+    "Nurse Autonomy",
+    "Nurse Well-Being",
+    "Remote Nursing",
+    "Professional Development",
+    "Behavioral Health",
+    "Communication Skills",
+    "Staffing Innovation",
+    "Future of Nursing Leadership",
+    "Mental Health Nursing",
+    "Women in Nursing Leadership",
+    "Mentorship in Nursing",
+  ];
 
 
 
@@ -147,9 +147,8 @@ const presentationOptions = [
       <form onSubmit={handleSubmit} className="space-y-4">
         {status.message && (
           <div
-            className={`w-full p-4 rounded-lg text-white text-center ${
-              status.type === "success" ? "bg-green-600" : "bg-red-600"
-            }`}
+            className={`w-full p-4 rounded-lg text-white text-center ${status.type === "success" ? "bg-green-600" : "bg-red-600"
+              }`}
           >
             {status.message}
           </div>
@@ -302,7 +301,7 @@ const presentationOptions = [
         </button>
 
         <button className="bg-one ml-2 px-4 py-2 rounded">
-          <a href="" download className="text-white">
+          <a href="/sample_abstract.pdf" download="Sample_Abstract.pdf" className="text-white">
             Download Demo Abstract
           </a>
         </button>
